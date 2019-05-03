@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pig-game</title>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <!--css-->
+    <link type="text/css" rel="stylesheet" href="dice.css">
+    <!--jQ-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<div class="wrapper clearfix">
+    <div class="player-0-panel active">
+        <div class="pigBox"><img src="img/15ri.gif" class="pig"  alt="gif"><span class="pig">Faster !!</span></div>
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">1</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Score</div>
+            <div class="player-current-score" id="current-0">1</div>
+        </div>
+    </div>
+    <div class="player-1-panel">
+        <div class="pigBox"><div class="float"><img src="img/15ri.gif" alt="gif"  class="pig1 pig visible"><span class="pig1 pig visible">O F&#!</span></div></div>
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">2</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Score</div>
+            <div class="player-current-score" id="current-1">2</div>
+        </div>
+    </div>
+
+    <button class="btn-new">New game</button>
+    <button class="btn-roll">Roll dice</button>
+    <button class="btn-hold">Hold</button>
+
+    <img src="img/dice-1.png" alt="Dice" class="dice" id="dice">
+</div>
+
+<!--jS-->
+<script src="dice.js"></script>
+</body>
+</html>
